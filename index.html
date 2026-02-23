@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Aventura 2D</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Aventura 2D</h1>
+    <p>Use as setas do teclado (ou "W A S D") para se mover.</p>
+
+    <!-- Painel Principal de Placar/Vidas -->
+    <div class="score-board">
+        <h3 id="livesDisplay">Vidas: ❤️ ❤️ ❤️</h3>
+        <h2 id="levelDisplay">Fase 1 / 20</h2>
+        <h3 id="scoreDisplay">Pontos: 0</h3>
+    </div>
+
+    <!-- Tela do jogo -->
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+    <!-- Controles para Celular (aparece apenas em telas pequenas) -->
+    <div id="mobileControls" class="controls">
+        <button id="btnUp">Cima</button>
+        <br>
+        <button id="btnLeft">Esq.</button>
+        <button id="btnDown">Baixo</button>
+        <button id="btnRight">Dir.</button>
+    </div>
+
+    <!-- Nosso código do jogo -->
+    <script src="script.js"></script>
+</body>
+
+</html>
